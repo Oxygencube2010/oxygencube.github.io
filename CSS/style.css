@@ -71,3 +71,44 @@ footer h4 {
 footer a {
     color: #f05f5c ; 
 }
+
+/* Basic styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the entire layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header section */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Content section split into left and right */
+.content {
+    display: flex;
+    flex: 1;
+}
+
+/* Bottom left frame (larger) */
+.bottom-left {
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Bottom right frame (smaller) */
+.bottom-right {
+    flex: 1;
+    background-color: #ddd;
+    padding: 20px;
+}
