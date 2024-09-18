@@ -18,99 +18,99 @@
                 border-radius: .3rem ;
              }
        </style>
+
+       <!-- JavaScript to load dynamic content -->
+      <script>
+        function loadContent(page) {
+          let content = document.getElementById('content');
+          if (page === 'tech') {
+            content.innerHTML = "<a href='technology.html'></a>";
+          } else if (page === 'neuro') {
+            content.innerHTML = "<a href='neuroscience.html'></a>";
+          } 
+       }
+      </script>
     </head>
     <body>
         <header>
-        <div class='container'>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                  <img src="source/pic/bootstrap-logo-shadow.png">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="technology.html">Technology</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="neuroscience.html">Neuroscience</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div></header>
-          </nav>
-        </div>
-    </header>
-        <section id='intro'> 
-            <div class='jumbotorn'>
-            <div class='container'>
-                <div class='now'>
-                    <div class='col-md-12'>
-                        <h1>Hello world to Technology , Neuroscience and Mixlogoist</h1>
-                        <p>Mixing technology and neuroscience into my daily life</p>
-                    </div>
+          <div class='container'>
+            <div class="text-bg-warning p-3">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="source/pic/drink-icon.jpg" alt="Image with object-fit" width="100px" height="100px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="technology.html" target="main">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="neuroscience.html" target="main">Neuroscience</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Drinks
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Brodeaux</a></li>
+                        <li><a class="dropdown-item" href="#">Bungundy</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Sake</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled">Disabled</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
                 </div>
-            </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        </header>
+        <section id='intro'>
+            <div class='container'>
+              <div class='row'>
+                <div class='col-md-12'>
+                  <h1>Hello world to Technology , Neuroscience and Mixlogoist</h1>
+                  <p>Mixing technology and neuroscience into my daily life</p>
+                </div>
+              </div>  
             </div>   
         </section>
-        <section id='second'>
-           <!-- Middle left frame -->
-           <div class='middle-left'>
-               <h3> Don't dive into your passion. Let it grow day by day. Your work is going to fill a large part of your life, and the only way to be tryly satisfied is to do what you believe is great work. And the only way to do grteat work is to love what you do. If you haven't found it yet, keep looking. Don't settle.</h3>
-               <p> - By Steve Job </p>
-           </div>
-           <!-- Middle right frame -->
-           <div class="middle-right">
-               <h3>Bottom Right Frame (Smaller)</h3>
-               <p>This frame takes up less space.</p>
-           </div>
-        </section>
-        <section id="email">
-            <div container>
-                <div class="row">
-                    <div class="col-md-8 offset-md-2 text-center">
-                        <h3> Join Mixlogoist Mail List</h3>
-                    </div>
-                    <div class='col-md-4'>
-                         <span><i class="fas fa-map-market-alt"></i>FB </span>
-                    </div>
-                    <div class='col-md-8' text-start>
-                         <span><i class="fas fa-clock"></i>IG </span>
-                    </div> 
-                </div>
-                <div class="row">
-                    <div class="col-md-8 offset-md-2 text-center">
-                        <p> Give me a chance to share my view with you</p>
-                    </div>
-                    <div class="input-group input-group-lg">
-                        <span class="input-group=text" id="inputGroup-sizing-lg"></span>
-                        <input type="Text" class="form-control" aria-label="Sizing example" aria-describedby="inputGroup-sizing-lg" placeholder="Your mail">
-                    </div>
-                    <a class="btn" href="#">Submit</a>
-                </div>
-            </div>
-        </section>
-    </body>
 
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-md-auto">
+              <iframe src="home.html" id="main" name="main" width="500px" height="500px"></iframe>
+            </div>
+            <div class="col-md-4">
+              <a href="home.html" target="main">Home</a><br>
+              <a href="neuroscience.html" target="main">Neuroscience</a><br>
+              <a href="technology.html" target="main">Technology</a> 
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div class='container text-center'>
+            <div class="row">
+              <div class="col-sm-4">
+                <span><i class="fas fa-map-market-alt"></i>FB </span>
+                <span><i class="fas fa-clock"></i>IG </span>
+              </div>
+              <div class="col-sm-8">
+                <span>Join Mixlogoist Mail List</span>
+              </div>
+            </div>
+          </div>
+        </footer>
+    </body>  
 </html>

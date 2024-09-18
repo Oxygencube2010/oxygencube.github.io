@@ -1,3 +1,21 @@
+
+/* Basic styling 
+   no prefix - HTML tag 
+   . - div class
+   # - section id
+*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the entire layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 #intro .jumbotron{
     height: 70vh;
     margin-bottom: 0px ; 
@@ -8,6 +26,14 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%) ;
     transform: translateY(-50%) ;
+}
+
+/* Header section */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -53,10 +79,14 @@ p.lead{
 #email h3{
     margin-bottom: 80px ;
 }
-
-footer{
-    border-top: solid 1px #c9c9c9 ;
-    padding : 80px 0px ;
+/* General footer styles */
+footer {
+    display: flex;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer img{
@@ -64,51 +94,33 @@ footer img{
     margin-bottom : 26px ; 
 }
 
-footer h4 {
-    margin-bottom: 26px ;
+/* Image style */
+.image-container {
+    width: 30px;
+    height: 20px;
 }
 
-footer a {
-    color: #f05f5c ; 
+.fit-img {
+    width: 10%;
+    height: 10%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
 }
 
-/* Basic styling */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+/* Style for the background slideshow container */
 
-/* Container for the entire layout */
-.container {
-    display: flex;
-    flex-direction: column;
+.slideshow-background {
+    width: 100%;
     height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    animation: changeBackground 30s infinite; /* Cycle through images every 10 seconds */
 }
 
-/* Header section */
-.header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Content section split into left and right */
-.content {
-    display: flex;
-    flex: 1;
-}
-
-/* Bottom left frame (larger) */
-.bottom-left {
-    flex: 3;
-    background-color: #f1f1f1;
-    padding: 20px;
-}
-
-/* Bottom right frame (smaller) */
-.bottom-right {
-    flex: 1;
-    background-color: #ddd;
-    padding: 20px;
+/* Keyframes for background image transitions */
+@keyframes changeBackground {
+    0%   { background-image: url('source/pic/bg.HEIC'); }
+    100% { background-image: url('source/pic/bg.HEIC'); }
 }
